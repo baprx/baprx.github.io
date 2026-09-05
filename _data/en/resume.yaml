@@ -36,8 +36,17 @@ education:
 experience:
   title: Work experiences
   data:
+    - title: SRE (Scaleway)
+      duration: November 2025 - Present
+      company: Scaleway
+      location: Lyon
+      link: https://www.scaleway.com/en
+      description:
+        - Currently working as a "transversal SRE", providing other teams tools and platforms to improve their deployment workflows and let them focus on their code.
+        - Managing multi-tenant Kubernetes clusters, ArgoCD, etc.
+        - Authoring Helm charts, including a generic chart reusable by any team, to standardize application deployment.
     - title: Cloud and DevOps Consultant (GCP)
-      duration: August 2021 - Present
+      duration: August 2021 - November 2025
       company: Skale-5
       location: Bordeaux / Remote (in Lyon since 2022)
       link: https://skale-5.com/

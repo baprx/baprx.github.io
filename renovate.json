@@ -1,13 +1,22 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
-    ":rebaseStalePrs"
+    ":configMigration",
+    ":prHourlyLimitNone",
+    ":rebaseStalePrs",
+    "config:best-practices",
+    "config:recommended",
+    "helpers:pinGitHubActionDigests"
   ],
+  "minimumReleaseAge": "14 days",
+  "minimumReleaseAgeBehaviour": "timestamp-optional",
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true
+      "changelogUrl": "{{sourceUrl}}/compare/{{currentDigest}}..{{newDigest}}",
+      "description": "Ensure any digest-pinned, GitHub-sourced, dependencies creates a link to the diff between the two commits",
+      "matchSourceUrls": ["https://github.com/**/*"],
+      "matchUpdateTypes": ["digest"]
     }
-  ]
+  ],
+  "pre-commit": { "enabled": true }
 }

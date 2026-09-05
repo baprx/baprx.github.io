@@ -36,8 +36,17 @@ education:
 experience:
   title: Expériences professionnelles
   data:
+    - title: SRE (Scaleway)
+      duration: Novembre 2025 - Présent
+      company: Scaleway
+      location: Lyon
+      link: https://www.scaleway.com/fr/
+      description:
+        - Travaillant actuellement en tant que SRE transversal, je fournis aux autres équipes des outils et des plateformes pour améliorer leurs workflows de déploiement et leur permettre de se concentrer sur leur code.
+        - Gestion de clusters Kubernetes multi-tenant, ArgoCD, etc.
+        - Développement de charts Helm, dont un chart générique réutilisable par toutes les équipes, afin de standardiser le déploiement des applications.
     - title: Consultant Cloud et DevOps (GCP)
-      duration: Août 2021 - Présent
+      duration: Août 2021 - Novembre 2025
       company: Skale-5
       location: Bordeaux / Télétravail (à Lyon depuis 2022)
       link: https://skale-5.com/
@@ -96,14 +105,14 @@ skills:
       items:
         - name: Terraform
           rate: 5
+        - name: Terragrunt
+          rate: 3
         - name: Helm
           rate: 5
         - name: Ansible
           rate: 5
-        - name: Pulumi
-          rate: 2
         - name: Crossplane
-          rate: 2
+          rate: 3
     - title: GitOps
       items:
         - name: Git
@@ -113,8 +122,8 @@ skills:
         - name: Github Actions
           rate: 4
         - name: Argo CD
-          rate: 4
-        - name: GCP Cloud Build
+          rate: 5
+        - name: Flux CD
           rate: 3
     - title: Développement
       items:
@@ -125,8 +134,8 @@ skills:
         - name: Python
           rate: 5
         - name: Bash
-          rate: 4
-        - name: Rust
+          rate: 5
+        - name: Go
           rate: 2
     - title: Soft skills
       items:

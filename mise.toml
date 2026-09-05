@@ -12,3 +12,7 @@ run = "bundle exec jekyll build --baseurl https://baptiste.is-a.dev"
 [tasks.serve]
 description = "Serve the built site for local preview"
 run = "bundle exec jekyll serve"
+
+[tasks.precommit]
+description = "Run pre-commit hooks with prek"
+run = "prek run --all-files"

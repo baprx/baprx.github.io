@@ -30,18 +30,7 @@ layout: default
     </div>
   </header>
 
-  <section id="education" class="section-first">
-    <div class="section-title">{{ site.data.resume.education.title }}</div>
-    {% for edu in site.data.resume.education.data %}
-    <div class="block">
-      <div class="block-title">{{ edu.university }}</div>
-      <div class="block-subtitle">{{ edu.duration }} | {{ edu.location }}</div>
-      <div class="block-content">{{ edu.major }}</div>
-    </div>
-    {% endfor %}
-  </section>
-
-  <section id="experience">
+  <section id="experience" class="section-first">
     <div class="section-title">{{ site.data.resume.experience.title }}</div>
     {% for exp in site.data.resume.experience.data %}
     <div class="block">
@@ -54,6 +43,17 @@ layout: default
         {% for item in exp.description %} {{ item }}<br />
         {% endfor %}
       </div>
+    </div>
+    {% endfor %}
+  </section>
+
+  <section id="education">
+    <div class="section-title">{{ site.data.resume.education.title }}</div>
+    {% for edu in site.data.resume.education.data %}
+    <div class="block">
+      <div class="block-title">{{ edu.university }}</div>
+      <div class="block-subtitle">{{ edu.duration }} | {{ edu.location }}</div>
+      <div class="block-content">{{ edu.major }}</div>
     </div>
     {% endfor %}
   </section>
