@@ -1,0 +1,14 @@
+[tools]
+ruby = "4.0.6"
+
+[tasks.install]
+description = "Install Ruby bundle dependencies"
+run = "bundle install"
+
+[tasks.build]
+description = "Build the Jekyll site"
+run = "bundle exec jekyll build --baseurl https://baptiste.is-a.dev"
+
+[tasks.serve]
+description = "Serve the built site for local preview"
+run = "bundle exec jekyll serve"
