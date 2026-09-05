@@ -36,7 +36,7 @@ education:
 experience:
   title: Expériences professionnelles
   data:
-    - title: SRE (Scaleway)
+    - title: Site Reliability Engineer
       duration: Novembre 2025 - Présent
       company: Scaleway
       location: Lyon
